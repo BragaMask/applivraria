@@ -1,12 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Livros extends StatelessWidget {
+class Livros extends StatefulWidget {
   const Livros({super.key});
 
   @override
+  State<Livros> createState() => _LivrosState();
+}
+
+class _LivrosState extends State<Livros> {
+  @override
   Widget build(BuildContext context) {
-    return Ink(
-      child: const Column(
+    return const InkWell(
+      onTap: null ,
+      child: Column(
         children: [
           ListTile(
             leading: Icon(Icons.menu_book),

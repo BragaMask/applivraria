@@ -27,6 +27,7 @@ class appLivraria extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.vertical(bottom: Radius.circular(20)) ),
         title: const Text(
           "App Livraria",
           style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),
